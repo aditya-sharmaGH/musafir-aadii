@@ -21,6 +21,21 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 255, 255, 0.15);
 }
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .destination-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
 
 .logo {
   font-size: 1.8rem;
@@ -576,3 +591,62 @@ body {
     align-items: center;
   }
 } 
+@media (max-width: 768px) {
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* Destinations Section */
+  .destination-cards {
+    grid-template-columns: 1fr !important;
+    padding: 10px;
+  }
+
+  .destination-card {
+    margin-bottom: 20px;
+  }
+
+  /* Blog Section */
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
